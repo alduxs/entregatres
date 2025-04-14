@@ -27,5 +27,48 @@ body {
   text-align: center;
   margin-bottom: 20px;
 }
+.header .navigation {
+  background-color: #ebebeb;
+  padding: 8px 0px;
+}
+.header a {
+  color: #003d12;
+  text-decoration: none;
+  padding: 8px 0px;
+  display: block;
+  font-weight: 600;
+}
+.header .button {
+  background-color: #003d12;
+  color: #fff;
+  font-weight: 600;
+}
+
+/* Colores de Backgrounds */
+/* Font colors */
+.footer {
+  background-color: #e6e6e6;
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 30px 25px;
+  align-items: center;
+  justify-content: center;
+}
+.footer .item {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.footer .item p {
+  text-align: center;
+  margin-bottom: 5px;
+}
+.footer .item a {
+  color: #003d12;
+  font-size: 600;
+  text-decoration: none;
+}
+.footer .item:last-child {
+  margin-bottom: 0px;
+}
 
 /*# sourceMappingURL=styles.css.map */

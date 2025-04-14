@@ -1,0 +1,233 @@
+/* Estilos para dispositivos móviles */
+
+
+
+.header__navigation {
+  background-color: #ebebeb;
+  padding: 8px 0px;
+}
+.header__navigation-link {
+  color: #003d12;
+  text-decoration: none;
+  padding: 8px 0px;
+  display: block;
+  font-weight: 600;
+}
+.header__navigation-button {
+  background-color: #003d12;
+  color: #fff;
+  font-weight: 600;
+}
+/*
+* SECCION PRODUCTOS HOME
+*/
+.productos {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+}
+.productos--padding-lateral {
+  padding: 0px 30px;
+}
+.productos--columns {
+  grid-template-columns: 1fr;
+}
+.productos__items {
+  margin: 30px;
+  padding: 30px;
+  background-color: #e2e2e2;
+  border: 1px solid #ccc;
+}
+.productos__items--margins {
+  margin: 0px 0px;
+}
+.productos__items--backgroundcolor {
+  background-color: #fff;
+}
+.productos__items--border-bottom {
+  border: 0px;
+  border-bottom: 1px solid #ccc;
+}
+.productos__items-imagen {
+  width: 100%;
+}
+.productos__items-titulo {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.productos__items-texto {
+  margin-bottom: 15px;
+}
+.productos__items-link {
+  padding: 8px 15px;
+  color: #fff;
+  background-color: #003d12;
+  font-size: 600;
+  text-decoration: none;
+}
+.footer {
+  padding: 30px 25px;
+  background-color: #e6e6e6;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-content: center;
+}
+.footer {
+  padding: 30px 25px;
+  background-color: #e6e6e6;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-content: center;
+}
+.footer__item {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.footer__item:last-child {
+  margin-bottom: 0px;
+}
+.footer__item p {
+  text-align: center;
+  margin-bottom: 5px;
+}
+.footer__item a {
+  color: #003d12;
+  font-size: 600;
+  text-decoration: none;
+}
+/*
+* PAGINA PRODUCTOS
+*/
+.productos-container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.productos-container aside {
+  margin: 30px;
+}
+.aside-active--green {
+  background-color: #003d12;
+  color: #fff;
+  border-color: #003d12;
+}
+.aside-active--green:hover {
+  background-color: #003d12;
+  color: #fff;
+  border-color: #003d12;
+}
+/*
+* CONTENIDO DE PAGINAS
+*/
+.contenido-estatico {
+  padding: 30px 30px;
+}
+.contenido-estatico__titulo {
+  padding: 0px 0px 15px;
+  font-weight: 700;
+  font-size: 2rem;
+}
+.contenido-estatico__bloque {
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #ccc;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.contenido-estatico__bloque--unafraccion {
+  grid-template-columns: 1fr;
+  justify-content: center;
+}
+.contenido-estatico__bloque:last-child {
+  margin-bottom: 0px;
+  border-bottom: 0px solid #ccc;
+}
+.contenido-estatico__bloque div {
+  margin-bottom: 15px;
+}
+.contenido-estatico__bloque div:last-child {
+  margin-bottom: 0px;
+}
+.contenido-estatico__subtitulo {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.contenido-estatico__texto--posicion {
+  order: 2;
+  margin-top: 15px;
+}
+.contenido-estatico__imagen--posicion {
+  order: 1;
+}
+.btn-green{
+  background-color: #003d12;
+  color: #fff;
+  font-weight: 600;
+}
+/* Media query para tabletas */
+@media (min-width: 600px) {
+  .productos {
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+  }
+  .productos--columns {
+    grid-template-columns: 1fr 1fr;
+  }
+  /*
+* PAGINA PRODUCTOS
+*/
+  .productos-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+  }
+  /*
+* CONTENIDO DE PAGINAS
+*/
+  .contenido-estatico__bloque {
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #ccc;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .contenido-estatico__bloque--unafraccion {
+    grid-template-columns: 600px;
+    justify-content: center;
+  }
+  .contenido-estatico__texto--posicion {
+    order: 1;
+    margin-top: 15px;
+  }
+  .contenido-estatico__imagen--posicion {
+    order: 2;
+    margin-left: 30px;
+  }
+}
+
+/* Media query para computadoras de escritorio */
+@media (min-width: 1024px) {
+  .header {
+    padding: 25px;
+    grid-template-columns: 1fr 2fr;
+  }
+  .header__navigation-link {
+    padding: 8px 20px;
+  }
+  .footer {
+    grid-template-columns: 1fr 1fr;
+  }
+  .productos--columns {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  /*
+* PAGINA PRODUCTOS
+*/
+  .productos-container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+  }
+  .contenido-estatico__bloque--unafraccion {
+    grid-template-columns: 900px;
+  }
+}

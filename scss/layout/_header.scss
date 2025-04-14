@@ -1,0 +1,13 @@
+@import '../abstracts/variables';
+
+.header {
+    background-color: $bg-primary-color;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 25px 0px 0px;
+    align-items: center;
+    .logo{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+  }

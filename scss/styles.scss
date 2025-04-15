@@ -1,8 +1,19 @@
+/* Reset */
 @import 'base/reset';
+/* Tipografía */
 @import 'base/typography';
+/* Variables */
 @import 'abstracts/variables';
+/* Modificadores */
 @import 'layout/modifyers';
+/* LAYOUT */
+/* Header */
 @import 'layout/header';
-@import 'pages/home';
-@import 'pages/products';
 @import 'layout/footer';
+/* PAGINAS */
+/* Home */
+@import 'pages/home';
+/* Productos */
+@import 'pages/products';
+/* Genericas */
+@import 'pages/generics';

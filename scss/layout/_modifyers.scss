@@ -11,11 +11,26 @@
   border: 0px;
   border-bottom: 1px solid #ccc;
 }
-
 .productos__items-titulo {
   font-size: 1.5rem;
   font-weight: 700;
 }
 .productos__items-texto {
   margin-bottom: 15px;
+}
+.btn-green{
+  background-color: #003d12;
+  color: #fff;
+  font-weight: 600;
+}
+.contenido-estatico__bloque--unafraccion {
+  grid-template-columns: 1fr;
+  justify-content: center;
+}
+.contenido-estatico__texto--posicion {
+  order: 2;
+  margin-top: 15px;
+}
+.contenido-estatico__imagen--posicion {
+  order: 1;
 }

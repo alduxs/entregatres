@@ -1,0 +1,36 @@
+@import "../abstracts/variables";
+@import "../abstracts/mixins";
+
+/* Media query para tabletas */
+@media (min-width: 600px) {
+  .productos {
+    @include grid(grid, 1fr 1fr);
+    gap: 5px;
+  }
+  .columns {
+    @include grid(grid, 1fr 1fr);
+  }
+  .productos-container {
+    @include grid(grid, 1fr 3fr);
+  }
+  .contenido-estatico {
+    padding: 30px 30px;
+    .bloque{
+      @include grid(grid,1fr 1fr);
+    }
+    .contenido-estatico__bloque--unafraccion {
+      grid-template-columns: 1fr;
+      justify-content: center;
+    }
+  }
+  
+  
+  .contenido-estatico__texto--posicion {
+    order: 1;
+    margin-top: 15px;
+  }
+  .contenido-estatico__imagen--posicion {
+    order: 2;
+    margin-left: 30px;
+  }
+}

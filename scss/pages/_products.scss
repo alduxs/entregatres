@@ -3,16 +3,23 @@
 
 .productos-container {
   @include grid(grid, 1fr);
+  padding-bottom: 30px;
   aside {
     margin: 30px;
+    .aside-active--green {
+      background-color: $bg-tertiary-color;
+      color: $bg-primary-color;
+      border-color: $bg-tertiary-color;
+    }
   }
   .productos-group {
     @include grid(grid, 1fr);
     .productos-items {
       margin: 30px;
       padding: 30px;
-      background-color: $bg-quaternary-color;
-      @include border(1px, solid, #ccc);
+      /*background-color: $bg-quaternary-color;*/
+      //@include border(0px, solid, #ccc);
+      border-bottom: 1px, solid, #ccc;
       .imagen {
         width: 100%;
       }

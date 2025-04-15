@@ -1,0 +1,37 @@
+@import "../abstracts/variables";
+@import "../abstracts/mixins";
+
+/* Media query para tabletas */
+@media (min-width: 1024px) {
+  .header {
+    @include grid(grid, 1fr 2fr);
+    padding: 25px;
+    a {
+      padding: 8px 20px;
+    }
+  }
+  .footer {
+    @include grid(grid, 1fr 1fr);
+  }
+
+  .productos-container {
+    @include grid(grid, 1fr 4fr);
+    .productos-group {
+      @include grid(grid, 1fr 1fr 1fr);
+      .productos-items {
+        margin: 1px;
+        padding: 30px;      
+      }
+
+    }
+  }
+
+  .contenido-estatico {
+   
+    .contenido-estatico__bloque--unafraccion {
+      grid-template-columns: 900px;
+    }
+  }
+
+  
+}

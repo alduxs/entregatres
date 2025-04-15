@@ -163,9 +163,15 @@ body {
 .productos-container {
   display: grid;
   grid-template-columns: 1fr;
+  padding-bottom: 30px;
 }
 .productos-container aside {
   margin: 30px;
+}
+.productos-container aside .aside-active--green {
+  background-color: #003d12;
+  color: #fff;
+  border-color: #003d12;
 }
 .productos-container .productos-group {
   display: grid;
@@ -174,8 +180,8 @@ body {
 .productos-container .productos-group .productos-items {
   margin: 30px;
   padding: 30px;
-  background-color: #e2e2e2;
-  border: 1px solid #ccc;
+  /*background-color: $bg-quaternary-color;*/
+  border-bottom: 1px, solid, #ccc;
 }
 .productos-container .productos-group .productos-items .imagen {
   width: 100%;
@@ -216,7 +222,7 @@ body {
   margin-bottom: 30px;
   display: grid;
   grid-template-columns: 1fr;
-  border: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
 }
 .contenido-estatico .bloque div {
   margin-bottom: 15px;
@@ -231,6 +237,77 @@ body {
 .contenido-estatico .bloque:last-child {
   margin-bottom: 0px;
   border-bottom: 0px solid #ccc;
+}
+
+/* Madia Query Tablet */
+/* Colores de Backgrounds */
+/* Font colors */
+/* Media query para tabletas */
+@media (min-width: 600px) {
+  .productos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+  }
+  .columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .productos-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+  }
+  .contenido-estatico {
+    padding: 30px 30px;
+  }
+  .contenido-estatico .bloque {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .contenido-estatico .contenido-estatico__bloque--unafraccion {
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+  .contenido-estatico__texto--posicion {
+    order: 1;
+    margin-top: 15px;
+  }
+  .contenido-estatico__imagen--posicion {
+    order: 2;
+    margin-left: 30px;
+  }
+}
+/* Colores de Backgrounds */
+/* Font colors */
+/* Media query para tabletas */
+@media (min-width: 1024px) {
+  .header {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 25px;
+  }
+  .header a {
+    padding: 8px 20px;
+  }
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .productos-container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+  }
+  .productos-container .productos-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .productos-container .productos-group .productos-items {
+    margin: 1px;
+    padding: 30px;
+  }
+  .contenido-estatico .contenido-estatico__bloque--unafraccion {
+    grid-template-columns: 900px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

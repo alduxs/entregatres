@@ -1,0 +1,39 @@
+@import "../abstracts/variables";
+@import "../abstracts/mixins";
+
+.productos-container {
+  @include grid(grid, 1fr);
+  aside {
+    margin: 30px;
+  }
+  .productos-group {
+    @include grid(grid, 1fr);
+    .productos-items {
+      margin: 30px;
+      padding: 30px;
+      background-color: $bg-quaternary-color;
+      @include border(1px, solid, #ccc);
+      .imagen {
+        width: 100%;
+      }
+      .link {
+        padding: 8px 15px;
+        color: $bg-primary-color;
+        background-color: $bg-tertiary-color;
+        font-size: 600;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.bt-active--green {
+  background-color: #003d12;
+  color: #fff;
+  border-color: #003d12;
+}
+.bt-active--green:hover {
+  background-color: #003d12;
+  color: #fff;
+  border-color: #003d12;
+}

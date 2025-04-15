@@ -1,0 +1,30 @@
+@import "../abstracts/variables";
+@import "../abstracts/mixins";
+
+.productos {
+  @include grid(grid, 1fr);
+  gap: 15px;
+
+  .items {
+    margin: 30px;
+    padding: 30px;
+    background-color: $bg-quaternary-color;
+    @include border(1px, solid, #ccc);
+    .imagen {
+      width: 100%;
+    }
+    .link {
+      padding: 8px 15px;
+      color: $bg-primary-color;
+      background-color: $bg-tertiary-color;
+      font-size: 600;
+      text-decoration: none;
+    }
+  }
+}
+.padding-lateral {
+  padding: 0px 30px;
+}
+.columns {
+  @include grid(grid, 1fr);
+}

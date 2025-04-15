@@ -16,6 +16,30 @@ body {
 /* Font colors */
 /* Colores de Backgrounds */
 /* Font colors */
+.productos__items--margins {
+  margin: 0px 0px;
+}
+
+.productos__items--backgroundcolor {
+  background-color: #fff;
+}
+
+.productos__items--border-bottom {
+  border: 0px;
+  border-bottom: 1px solid #ccc;
+}
+
+.productos__items-titulo {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.productos__items-texto {
+  margin-bottom: 15px;
+}
+
+/* Colores de Backgrounds */
+/* Font colors */
 .header {
   background-color: #fff;
   display: grid;
@@ -42,6 +66,81 @@ body {
   background-color: #003d12;
   color: #fff;
   font-weight: 600;
+}
+
+/* Colores de Backgrounds */
+/* Font colors */
+.productos {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+}
+.productos .items {
+  margin: 30px;
+  padding: 30px;
+  background-color: #e2e2e2;
+  border: 1px solid #ccc;
+}
+.productos .items .imagen {
+  width: 100%;
+}
+.productos .items .link {
+  padding: 8px 15px;
+  color: #fff;
+  background-color: #003d12;
+  font-size: 600;
+  text-decoration: none;
+}
+
+.padding-lateral {
+  padding: 0px 30px;
+}
+
+.columns {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+/* Colores de Backgrounds */
+/* Font colors */
+.productos-container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.productos-container aside {
+  margin: 30px;
+}
+.productos-container .productos-group {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.productos-container .productos-group .productos-items {
+  margin: 30px;
+  padding: 30px;
+  background-color: #e2e2e2;
+  border: 1px solid #ccc;
+}
+.productos-container .productos-group .productos-items .imagen {
+  width: 100%;
+}
+.productos-container .productos-group .productos-items .link {
+  padding: 8px 15px;
+  color: #fff;
+  background-color: #003d12;
+  font-size: 600;
+  text-decoration: none;
+}
+
+.bt-active--green {
+  background-color: #003d12;
+  color: #fff;
+  border-color: #003d12;
+}
+
+.bt-active--green:hover {
+  background-color: #003d12;
+  color: #fff;
+  border-color: #003d12;
 }
 
 /* Colores de Backgrounds */

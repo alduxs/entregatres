@@ -1,0 +1,21 @@
+@import "../abstracts/variables";
+@import "../abstracts/mixins";
+
+.productos__items--margins {
+  margin: 0px 0px;
+}
+.productos__items--backgroundcolor {
+  background-color: #fff;
+}
+.productos__items--border-bottom {
+  border: 0px;
+  border-bottom: 1px solid #ccc;
+}
+
+.productos__items-titulo {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.productos__items-texto {
+  margin-bottom: 15px;
+}

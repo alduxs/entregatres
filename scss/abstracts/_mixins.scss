@@ -2,4 +2,8 @@
     display: $display;
     grid-template-columns: $template-columns;
 }
+
+@mixin border($tamanio, $tipo,$color) {
+    border: $tamanio $tipo $color;
+}
   
